@@ -1,4 +1,4 @@
-# LangChain Chatbot
+# LangChain Chatbot (Model: llama3.2)
 
 A simple chatbot application built with LangChain that processes user questions and returns helpful responses.
 
