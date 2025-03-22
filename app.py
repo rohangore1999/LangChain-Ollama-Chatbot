@@ -1,4 +1,4 @@
-from langchain_core.prompts import ChatPromptTemplate # To give the initial prompt template
+from langchain_core.prompts import ChatPromptTemplate # To give the initial prompt template and set context to the model
 from langchain_core.output_parsers import StrOutputParser # Default LLM parser to parse the output from the LLM Model
 from langchain_community.llms import Ollama # LLM Model
 
@@ -28,7 +28,9 @@ input_text = st.text_input("Enter your question here")
 
 # 2) Model
 llm = Ollama(model="llama3.2") # get models from https://ollama.com/search
-output_parser = StrOutputParser() # it will parse the output from the LLM Model to simple string format
+
+# It will parse the output from the LLM Model to simple string format
+output_parser = StrOutputParser()
 
 # 3) Chain
 # Complete LangChain processing pipeline
